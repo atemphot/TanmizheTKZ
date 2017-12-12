@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@android:drawable/ic_menu_upload" android:id="@+id/ft_menu_item_upload_file" android:title="@string/ui_ft_upload_file" android:alphabeticShortcut="u" android:checkable="false" />
+    <item android:icon="@android:drawable/ic_menu_add" android:id="@+id/ft_menu_item_new_folder" android:title="@string/ui_ft_new_folder" android:alphabeticShortcut="n" android:checkable="false" />
+    <item android:icon="@android:drawable/ic_menu_search" android:id="@+id/ft_menu_item_search" android:title="@string/ui_ft_search" android:alphabeticShortcut="s" android:checkable="false" />
+    <item android:icon="@android:drawable/ic_menu_view" android:id="@+id/ft_menu_item_open_local_file" android:title="@string/ui_ft_open_local_file" android:alphabeticShortcut="o" android:checkable="false" />
+    <item android:icon="@android:drawable/ic_menu_close_clear_cancel" android:id="@+id/ft_menu_item_exit" android:title="@string/ui_ft_exit" android:alphabeticShortcut="e" android:checkable="false" />
+</menu>

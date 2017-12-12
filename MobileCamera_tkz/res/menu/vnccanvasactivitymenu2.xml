@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item android:id="@+id/itemDisconnect" android:title="@string/vnc_disconnect" android:icon="@drawable/ic_menu_disconnect" />
+	<item android:id="@+id/itemColorMode" android:title="@string/color_mode" android:icon="@android:drawable/ic_menu_preferences" />
+
+    <item android:id="@+id/itemViewOnly" android:title="@string/viewonly_or_not" android:icon="@drawable/ic_menu_viewonly">
+    	<menu>
+	    	<group android:id="@+id/groupViewOnly" android:checkableBehavior="single">
+	    		<item android:id="@+id/itemViewOnlyYes" android:title="@string/viewonly_yes" android:checked="true" />
+	    		<item android:id="@+id/itemViewOnlyNo" android:title="@string/viewonly_no"/>
+	    	</group>
+    	</menu>
+    </item>
+
+	<item android:id="@+id/itemInputTouchPanZoomMouse" android:title="@string/input_mode_touch_pan_zoom_mouse" android:icon="@drawable/ic_menu_input_mode_touch_pan_zoom_mouse" />
+	<item android:id="@+id/itemInputMouse" android:title="@string/input_mode_mouse" android:icon="@drawable/ic_menu_input_mode_mouse" />
+
+    <item android:id="@+id/itemSendKey" android:title="@string/item_send_key" android:icon="@drawable/ic_menu_sendkey">
+    	<menu>
+	    	<group android:id="@+id/groupSendKey" android:checkableBehavior="none">
+	    		<item android:id="@+id/itemSendKeyWinCad" android:title="@string/sendkey_win_cad" />
+	    		<item android:id="@+id/itemSendKeyAndroidPower" android:title="@string/sendkey_android_power" />
+	    		<item android:id="@+id/itemSendKeyUp" android:title="@string/sendkey_up" />
+	    		<item android:id="@+id/itemSendKeyDown" android:title="@string/sendkey_down" />
+	    		<item android:id="@+id/itemSendKeyLeft" android:title="@string/sendkey_left" />
+	    		<item android:id="@+id/itemSendKeyRight" android:title="@string/sendkey_right" />
+	    	</group>
+    	</menu>
+    </item>
+
+</menu>

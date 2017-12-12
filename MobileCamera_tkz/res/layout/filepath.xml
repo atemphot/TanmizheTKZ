@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ff757575" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@+id/ft_sub_layout1" android:background="#ffb5b5b5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentBottom="true">
+        <Button android:id="@+id/ft_ok_btn" android:layout_width="148.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/ui_ft_btn_ok" android:layout_alignParentLeft="true" />
+        <Button android:id="@+id/ft_cancel_btn" android:layout_width="148.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/ui_ft_btn_cancel" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/ft_sub_layout2" android:background="#ffb5b5b5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_above="@id/ft_sub_layout1">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="?android:textColorPrimary" android:id="@+id/id_text_filename" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_text_filename" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <EditText android:textSize="16.0sp" android:id="@+id/id_edit_filename" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="" android:hint="" android:singleLine="true" android:maxLength="254" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/ft_sub_layout3" android:background="#ffb5b5b5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <EditText android:textSize="16.0sp" android:id="@+id/id_edit_filepath" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="" android:singleLine="true" android:maxLength="512" android:editable="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@+id/up_level_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/up_level" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@+id/file_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ft_sub_layout2" android:layout_below="@id/ft_sub_layout3" />
+</RelativeLayout>
